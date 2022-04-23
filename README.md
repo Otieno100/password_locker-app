@@ -1,6 +1,6 @@
 ## password_Locker App
 
-#### Simple Python App that creates new contacts with properties. Touches on Test Driven Development using unittest (Python test framework).
+#### Simple Python App that creates new password with properties. Touches on Test Driven Development using unittest (Python test framework).
 
 #### Technologies Used
 * Python3.9
