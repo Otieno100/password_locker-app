@@ -17,3 +17,14 @@ class Password :
         pas.phone_number = number
         pas.account_password = account_password
 
+    password_list = []
+
+    def save_password(pas):
+
+        """
+        save password method, saves password objects into password list
+
+        """
+        Password.password_list.append(pas)
+        
+

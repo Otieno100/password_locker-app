@@ -22,11 +22,19 @@ class testclass (unittest.TestCase) :
         """
         test case that defines the instance of saving the password
         """
-        pas.new_password.save_password(
-            pas.assertEqual(len(Password.password-list),1)
-        )
+        pas.new_password.save_password()
+        pas.assertEqual(len(Password.password_list),1)
+        
 
+    def test_generate_random_password(pas) :
 
+        """
+        test case to define the instance of generating a random password
+
+        """
+        pas.new_password.save_password(pas)
+        pas.assertEqual(len(Password.password_list),2)
+        
 
 
 
