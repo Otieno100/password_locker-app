@@ -24,6 +24,9 @@ class testclass (unittest.TestCase) :
         """
         pas.new_password.save_password()
         pas.assertEqual(len(Password.password_list),1)
+
+    def tearDown(pas) :
+        Password.password_list =[]
         
 
     def test_generate_random_password(pas) :
@@ -32,10 +35,21 @@ class testclass (unittest.TestCase) :
         test case to define the instance of generating a random password
 
         """
-        pas.new_password.save_password(pas)
+        pas.new_password.save_password()
+        test_password =Password("Test","user","abcdef023444!!@","passw@10.com")
+        test_password.save_password()
         pas.assertEqual(len(Password.password_list),2)
-        
 
+
+    def test_delete_password(pas):
+        """
+        instance to delete our password
+        """
+        pas.new_password.save_password ()
+        test_password = Password("instagram", "John", "077777777","brian102@")  
+        test_password.save_password()
+        pas.new_password.delete_password()
+        pas.assertEqual(len(Password.password_list),1)
 
 
 if __name__=="__main__":
