@@ -33,3 +33,23 @@ class Password :
         this method deletes the saved contacts
         """
         Password.password_list.remove(pas)
+
+
+    @classmethod
+    def find_by_username(cls,username):
+        '''
+        the method takes in a username and return the password being searched
+
+        '''
+
+        for password in cls.password_list :
+            if password.username == username :
+                return password
+
+
+    @classmethod
+    def display_passwords(cls):
+        """
+        method that returns all the saved credentials
+        """
+        return cls.password_list

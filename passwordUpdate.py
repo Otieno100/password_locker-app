@@ -52,5 +52,38 @@ class testclass (unittest.TestCase) :
         pas.assertEqual(len(Password.password_list),1)
 
 
+    def test_find_password_by_username(pas) :
+
+        """
+            this test checks if we can find a password using username
+
+        """
+        pas.new_password.save_password()
+        test_password =Password("instagram", "John", "077777777","brian102@")
+        test_password.save_password()
+        found_password = Password.find_by_username("John")
+        pas.assertEqual(found_password.username,test_password.username)
+
+
+    def test_display_all_password(pas):
+
+        '''
+        method that returns list of all the saved items
+
+        '''
+        pas.assertEqual(Password.display_passwords(),Password.password_list)
+
+        
+
+
+
+
+
+
+
+
+
+
+
 if __name__=="__main__":
     unittest.main()
