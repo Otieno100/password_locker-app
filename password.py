@@ -1,16 +1,19 @@
 
+from threading import active_count
+
+
 class Password :
     """
     Class that generates new instances of contacts.
     """
   # Emp
 
-    def __init__(pas, first_name, last_name, number, email):
+    def __init__(pas, account_name, username, number, account_password):
 
       # docstring removed for simplicity
 
-        pas.first_name = first_name
-        pas.last_name = last_name
+        pas.account_name = account_name
+        pas.username = username
         pas.phone_number = number
-        pas.email = email
+        pas.account_password = account_password
 

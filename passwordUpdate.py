@@ -7,14 +7,24 @@ class testclass (unittest.TestCase) :
 
     def setUp(pas):
 
-     pas.new_password = Password("Brian", "otieno", "077777777","b@gmail.com")
+     pas.new_password = Password("instagram", "John", "077777777","brian102@")
 
     def test_init (pas):
-        pas.assertEqual(pas.new_password.first_name,"Brian")
-        pas.assertEqual(pas.new_password.last_name,"otieno")
-        pas.assertEqual(pas.new_password.phone_number,"077777777")
-        pas.assertEqual(pas.new_password.email,"b@gmail.com")
-        
+        pas.assertEqual(pas.new_password.account_name,"instagram")
+        pas.assertEqual(pas.new_password.username,"John")
+        pas.assertEqual(pas.new_password.phone_number ,"077777777")
+
+        pas.assertEqual(pas.new_password.account_password,"brian102@")
+
+
+    def test_save_password(pas) :
+
+        """
+        test case that defines the instance of saving the password
+        """
+        pas.new_password.save_password(
+            pas.assertEqual(len(Password.password-list),1)
+        )
 
 
 
