@@ -63,7 +63,7 @@ def main():
 
     while True:
 
-        print ("use this short codes: cp- create a new password,dp-display passwords,cr- search for random password,cx- exit the password")
+        print ("use this short codes: cp- create a new password,dp- display passwords,cr- search for random password,cx- exit the password")
 
         short_code = input().lower()
 
@@ -137,7 +137,7 @@ def main():
                 print("That password does not exist")
 
 
-        elif short_code == "ex" :
+        elif short_code == "cx" :
             print("exit the app")
 
                
