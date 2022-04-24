@@ -1,6 +1,7 @@
 
 
 from random import randint
+import pyperclip
 
 
 class Password :
@@ -65,6 +66,13 @@ class Password :
         for i in range(cls) :
             pasw +=ran[(randint(0,10))]
         return(pasw)
-         
-            
+
+    @classmethod
+    def copy_username(cls,username) :
+
+        """
+        test method to copy details on clip-board
+        """
+        password_found = Password.find_by_username(username)
+        pyperclip.copy(password_found.username)
 

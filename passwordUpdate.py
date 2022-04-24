@@ -1,5 +1,6 @@
 # from cgi import test
 import unittest
+import pyperclip
 
 from password import Password
 class testclass (unittest.TestCase) :
@@ -73,7 +74,10 @@ class testclass (unittest.TestCase) :
         '''
         pas.assertEqual(Password.display_passwords(),Password.password_list)
 
-        
+    def test_copy_username(pas) :
+        pas.new_password.save_password()
+        Password.copy_username("John")
+        pas.assertEqual(pas.new_password.username,pyperclip.paste())
 
 
 
