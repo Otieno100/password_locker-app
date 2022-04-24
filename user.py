@@ -137,6 +137,12 @@ def main():
                 print("That password does not exist")
 
 
+        elif short_code == "ex" :
+            print("exit the app")
+
+               
+
+
 
 
 
