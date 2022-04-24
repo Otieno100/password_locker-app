@@ -67,10 +67,7 @@ def main():
 
         short_code = input().lower()
 
-        if short_code == "cr" :
-            print("generate random password")
-            print("-"*10)
-
+        
 
         if short_code == "cp":
             print("new password")
