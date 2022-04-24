@@ -63,6 +63,32 @@ def main():
             print('.\n')
 
 
+        elif short_code == "dp" :   
+            if display_password() :
+                print("Here is a list of all passwords")
+                print('\n')
+                for password in display_password():
+                    print(f"{password.account_name}){password.username}....{password.account_password}")
+                    print('.\n')
+
+
+        else:
+            print('/n')
+            print("you dont seem to have any login details")
+            print('.\n')
+
+
+            
+
+        # elif short_code == "cr" :
+        #     print("select a random password")
+
+        #     random_password = input()
+
+
+            
+
+
 
 
     
