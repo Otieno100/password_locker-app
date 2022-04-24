@@ -1,5 +1,8 @@
 
 
+from random import randint
+
+
 class Password :
     """
     Class that generates new instances of contacts.
@@ -53,3 +56,15 @@ class Password :
         method that returns all the saved credentials
         """
         return cls.password_list
+
+
+    def random_password (cls):
+
+        ran = "bcadreskahajajaDGJKJN09765347865!!!@"
+        pasw = ""
+        for i in range(cls) :
+            pasw +=ran[(randint(0,10))]
+        return(pasw)
+         
+            
+
