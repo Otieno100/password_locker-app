@@ -7,7 +7,7 @@ def create__password(accname,username,phone,password):
     return new_password
 
 
-def save_passwords(password):
+def save_password(password):
     password.save_password()
 
 def generate_random_password(password):
@@ -26,7 +26,46 @@ def display_password():
 
 def main():
     print("Habari! Welcome to your password list. What is your name")
+    user_name = input()
+    print(f"Hello{user_name}.what would you like to do")
 
+    print('.\n')
+
+
+    while True:
+
+        print ("use this short codes: cp- create a new password,dp-display passwords,cr- create random password,cx- exit the password")
+
+        short_code = input().lower()
+        if short_code == "cp":
+            print("new password")
+            print("-"*5)
+             
+            print("acount name......")
+            accname =input()
+
+            print("add username.........")
+            username =input()
+
+
+            print("phone_number ......")
+            phone = input()
+
+            print("password.......")
+            password = input()
+
+            
+
+
+            save_password(create__password(accname,username,phone,password)) 
+            print('.\n')
+            print(f"username{username}password{password}created")  
+            print('.\n')
+
+
+
+
+    
 
 
 
