@@ -28,7 +28,7 @@ Enter Short Code
 Enter Short Code
 * INPUT: "FC"
 * INPUT: "0712345678" - Search by Phone Number
-* OUTPUT: "Phone number.......o712345678, Email address.......sam@gmail.com" - Returns contact if exists
+* OUTPUT: "Phone number.......o712345678, Email addr- Returns contact if exists
 
 #### Development
 Want to contribute? Great!

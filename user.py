@@ -29,9 +29,10 @@ def display_password():
 
 
 # generating a random pasword
-print("generate a random password for your account")
+print("Hello welcome and let us get started")
+print("select a random password for your account")
 def genP(ln)  : 
-    print("generate a random password")
+    # print("generate a random password")
     login ="abcdfhjkioersHJOOIDIWOWW1234567!@#$%&"
     pasw1 = ""
     for i in range(ln):
@@ -51,7 +52,7 @@ print(genP(10))
 def main():
 
 
-    print("Habari! Welcome to your password list. What is your name")
+    print(" What is your name")
     user_name = input()
     print(f"Hello{user_name}.what would you like to do")
 
@@ -85,6 +86,9 @@ def main():
 
             print("password.......")
             password = input()
+
+
+            print("proceed to the next leve using the codes")
 
 
             # save_password(generate_random_password)(abcdghjkBNHGFUIGY123490)
